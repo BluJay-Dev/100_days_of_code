@@ -10,18 +10,28 @@
 # #  The cards in the list have equal probability of being drawn.
 # #  Cards are not removed from the deck as they are drawn.
 # #  The computer is the dealer.
-from art import logo
+import random
 
+from art import logo
+from bj_cards import cards
 play = input(f"Do you want to play a game of Blackjack? type 'y' or 'n': ")
 print(logo)
+print(len(cards))
+
+
+def deal(card_deal):
+    my_hand = card_deal[random.randint(0, 12)]
+    my_hand2 = card_deal[random.randint(0, 12)]
+    your_hand = card_deal[random.randint(0, 12)]
+    your_hand2 = card_deal[random.randint(0, 12)]
+    my_blackjack = int(my_hand) + int(my_hand2)
+    your_blackjack = int(your_hand) + int(your_hand2)
+    return my_blackjack, your_blackjack
 
 
 def blackjack(keep_playing):
     while keep_playing:
-        print('stuff')
-        thing = input('Answer')
-        if thing == 'Answer':
-            keep_playing = False
+        deal(cards)
 
 
 if play == 'y':
