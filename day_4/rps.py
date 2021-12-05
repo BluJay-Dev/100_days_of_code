@@ -41,7 +41,7 @@ if choice == choice2:
     print('Draw pick again')
 
 if choice == 0 and choice2 == 2:
-    print("Rock beats paper you win!")
+    print("Rock beats Scissors you win!")
 elif choice == 0 and choice2 == 1:
     print("Paper beats rock you lose :(")
 
