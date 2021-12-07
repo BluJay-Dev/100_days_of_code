@@ -10,5 +10,5 @@ logo = r"""
 """
 
 
-
-
+def marionette_link(item):
+    return f'<a href=\'https://app.mirrorweb.com/management/web/crawl/{item["id"]}\' target=\'_blank\'>{item["id"]}</a>'
