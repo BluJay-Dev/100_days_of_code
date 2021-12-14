@@ -3,7 +3,7 @@ import random
 
 
 def number_gen():
-    num = random.randint(0, 100)
+    num = random.randint(1, 100)
     return num
 
 
